@@ -1,20 +1,27 @@
 PODS:
-  - LBXScan/LBXNative (2.4.1):
-    - LBXScan/Types (~> 2.2)
-  - LBXScan/LBXZXing (2.4.1):
-    - LBXScan/Types (~> 2.2)
-  - LBXScan/Types (2.4.1)
-  - LBXScan/UI (2.4.1):
-    - LBXScan/Types (~> 2.2)
-  - LBXZBarSDK (1.3.4)
+  - LBXScan/LBXNative (2.5.1):
+    - LBXScan/Types
+  - LBXScan/LBXZBar (2.5.1):
+    - LBXZBarSDK (= 1.3.5)
+  - LBXScan/LBXZXing (2.5.1):
+    - LBXScan/Types
+    - ZXingObjC
+  - LBXScan/Types (2.5.1)
+  - LBXScan/UI (2.5.1):
+    - LBXScan/Types
+  - LBXZBarSDK (1.3.5)
   - Toast (4.0.0)
+  - ZXingObjC (3.6.5):
+    - ZXingObjC/All (= 3.6.5)
+  - ZXingObjC/All (3.6.5)
 
 DEPENDENCIES:
   - LBXScan/LBXNative (from `../`)
+  - LBXScan/LBXZBar (from `../`)
   - LBXScan/LBXZXing (from `../`)
   - LBXScan/UI (from `../`)
-  - LBXZBarSDK (~> 1.3)
   - Toast (~> 4.0.0)
+  - ZXingObjC (from `https://github.com/zxingify/zxingify-objc.git`, tag `3.6.7`)
 
 SPEC REPOS:
   trunk:
@@ -24,12 +31,21 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   LBXScan:
     :path: "../"
+  ZXingObjC:
+    :git: https://github.com/zxingify/zxingify-objc.git
+    :tag: 3.6.7
+
+CHECKOUT OPTIONS:
+  ZXingObjC:
+    :git: https://github.com/zxingify/zxingify-objc.git
+    :tag: 3.6.7
 
 SPEC CHECKSUMS:
-  LBXScan: 740f2a4dcff7923cb08700c8ac864ca300fb5335
-  LBXZBarSDK: e32ffa0db6e9da403c88316ed86ec19e2da4c532
+  LBXScan: 9460338e0acd90d77c1be3e547b2b0d2d420662d
+  LBXZBarSDK: db826d1265fbb4fbdbb2f30d7d1e96142e32bfff
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 22264310b927b0a02c11f7858c56d0fffe2302a8
+PODFILE CHECKSUM: c3caf39e9195911e2c980e25d89c4c4bf18c5ee7
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.3

@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-#import "ZXBarcodeFormat.h"
+#import <ZXingObjC/ZXBarcodeFormat.h>
 
 #define LBXScan_Define_ZXing
 

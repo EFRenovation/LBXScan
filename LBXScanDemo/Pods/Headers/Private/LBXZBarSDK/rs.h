@@ -1,1 +1,0 @@
-../../../LBXZBarSDK/zbar/qrcode/rs.h

@@ -1,1 +1,0 @@
-../../../LBXZBarSDK/include/zbar.h

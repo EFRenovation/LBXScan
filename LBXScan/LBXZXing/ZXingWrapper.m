@@ -7,7 +7,7 @@
 //
 
 #import "ZXingWrapper.h"
-#import "ZXingObjC.h"
+#import <ZXingObjC/ZXingObjC.h>
 #import "LBXZXCaptureDelegate.h"
 #import "LBXZXCapture.h"
 

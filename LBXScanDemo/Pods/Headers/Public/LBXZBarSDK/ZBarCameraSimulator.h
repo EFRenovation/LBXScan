@@ -1,1 +1,0 @@
-../../../LBXZBarSDK/iphone/include/ZBarSDK/ZBarCameraSimulator.h

@@ -25,7 +25,7 @@
 #endif
 
 #ifdef LBXScan_Define_ZBar
-#import "ZBarSDK.h"
+#import <LBXZBarSDK/ZBarSDK.h>
 #import "LBXZBarWrapper.h"//ZBar扫码封装
 #endif
 

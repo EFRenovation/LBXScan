@@ -1,1 +1,0 @@
-../../../LBXZBarSDK/zbar/img_scanner.h

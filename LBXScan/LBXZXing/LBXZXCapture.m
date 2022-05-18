@@ -15,14 +15,14 @@
  */
 
 #import <ImageIO/ImageIO.h>
-#import "ZXBinaryBitmap.h"
+#import <ZXingObjC/ZXBinaryBitmap.h>
 #import "LBXZXCapture.h"
-#import "ZXCaptureDelegate.h"
-#import "ZXCGImageLuminanceSource.h"
-#import "ZXDecodeHints.h"
-#import "ZXHybridBinarizer.h"
-#import "ZXReader.h"
-#import "ZXResult.h"
+#import <ZXingObjC/ZXCaptureDelegate.h>
+#import <ZXingObjC/ZXCGImageLuminanceSource.h>
+#import <ZXingObjC/ZXDecodeHints.h>
+#import <ZXingObjC/ZXHybridBinarizer.h>
+#import <ZXingObjC/ZXReader.h>
+#import <ZXingObjC/ZXResult.h>
 
 @interface LBXZXCapture ()
 

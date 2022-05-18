@@ -1,1 +1,0 @@
-../../../LBXZBarSDK/zbar/window/x.h
