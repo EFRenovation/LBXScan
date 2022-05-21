@@ -191,7 +191,7 @@
 }
 
 
-+ (void)recognizeImage:(UIImage*)image block:(void(^)(ZXBarcodeFormat barcodeFormat,NSString *str))block;
++ (void)recognizeImage:(UIImage*)image hints:(ZXDecodeHints*)hints block:(void(^)(ZXBarcodeFormat barcodeFormat,NSString *str))block;
 {
     ZXCGImageLuminanceSource *source = [[ZXCGImageLuminanceSource alloc] initWithCGImage:image.CGImage];
     
@@ -206,7 +206,6 @@
     if (NSClassFromString(@"ZXMultiFormatReader")) {
         reader = [NSClassFromString(@"ZXMultiFormatReader") performSelector:@selector(reader)];
     }
-    
     ZXDecodeHints *_hints = [ZXDecodeHints hints];
     ZXResult *result = [reader decode:bitmap hints:_hints error:&error];
     

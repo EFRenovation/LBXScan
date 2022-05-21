@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 #import <ZXingObjC/ZXBarcodeFormat.h>
+#import <ZXingObjC/ZXDecodeHints.h>
 
 #define LBXScan_Define_ZXing
 
@@ -101,6 +102,6 @@
  *  @param image 图像
  *  @param block 返回识别结果
  */
-+ (void)recognizeImage:(UIImage*)image block:(void(^)(ZXBarcodeFormat barcodeFormat,NSString *str))block;
++ (void)recognizeImage:(UIImage*)image hints:(ZXDecodeHints*)hints block:(void(^)(ZXBarcodeFormat barcodeFormat,NSString *str))block;
 
 @end

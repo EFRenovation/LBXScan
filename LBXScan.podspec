@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'LBXScan'
-    s.version      = '2.5.2'
+    s.version      = '2.5.3'
     s.summary      = 'ios scan wrapper'
     s.homepage     = 'https://github.com/MxABC/LBXScan'
     s.license      = 'MIT'
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'LBXZBar' do |lbxZbar|
-      lbxZbar.dependency 'LBXZBarSDK','1.3.5'
+      lbxZbar.dependency 'LBXZBarSDK'
     end
   
     s.subspec 'UI' do |ui|
