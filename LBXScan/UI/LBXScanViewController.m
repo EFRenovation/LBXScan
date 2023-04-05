@@ -403,7 +403,7 @@
         {
 #ifdef LBXScan_Define_ZXing
             
-            [ZXingWrapper recognizeImage:image block:^(ZXBarcodeFormat barcodeFormat, NSString *str) {
+            [ZXingWrapper recognizeImage:image hints: [[ZXDecodeHints alloc]init] block:^(ZXBarcodeFormat barcodeFormat, NSString *str) {
                 
                 LBXScanResult *result = [[LBXScanResult alloc]init];
                 result.strScanned = str;

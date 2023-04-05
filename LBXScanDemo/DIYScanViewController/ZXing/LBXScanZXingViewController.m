@@ -318,7 +318,7 @@
 {
     __weak __typeof(self) weakSelf = self;
     
-    [ZXingWrapper recognizeImage:image block:^(ZXBarcodeFormat barcodeFormat, NSString *str) {
+    [ZXingWrapper recognizeImage:image hints: [[ZXDecodeHints alloc]init] block:^(ZXBarcodeFormat barcodeFormat, NSString *str) {
         
         LBXScanResult *result = [[LBXScanResult alloc]init];
         result.strScanned = str;

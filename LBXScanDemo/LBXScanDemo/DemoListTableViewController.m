@@ -447,7 +447,7 @@
         case SLT_ZXing:
         {
             __weak __typeof(self) weakSelf = self;
-            [ZXingWrapper recognizeImage:image block:^(ZXBarcodeFormat barcodeFormat, NSString *str) {
+            [ZXingWrapper recognizeImage:image hints: [[ZXDecodeHints alloc]init] block:^(ZXBarcodeFormat barcodeFormat, NSString *str) {
                 
                 if (str) {
                     LBXScanResult *result = [[LBXScanResult alloc]init];
