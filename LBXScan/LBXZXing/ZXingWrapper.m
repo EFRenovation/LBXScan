@@ -179,7 +179,7 @@
     ZXBitMatrix *result = [writer encode:str
                                   format:format
                                    width:size.width
-                                  height:size.width
+                                  height:size.height
                                    error:nil];
     
     if (result) {
